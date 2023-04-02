@@ -2,13 +2,42 @@
 # Course Dependencies
 1. Install **App Installer** from Microsoft Store
 2. Run the following PowerShell commands. Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C/V</kbd> for copy pasting if conventional <kbd>Ctrl</kbd> + <kbd>C/V</kbd> doesn't do the trick.
-	```powershell
-	winget install Postman.Postman
-	winget install WiresharkFoundation.Wireshark
-	winget install cURL.cURL
-	winget install OpenJS.NodeJS
-	winget install Ngrok.Ngrok
-	```
+	- Install Postman desktop client from [`https://www.postman.com/downloads/`](https://www.postman.com/downloads/) or using `winget`:
+	
+		```
+		winget install Postman.Postman
+		```
+	  [`Hoppscotch`](https://hoppscotch.io/) is a simple alternative to Postman but lacks desktop support. Requests to `localhost` therefore can't be sent using just the web client.
+	
+	- Install Wireshark Packet analyser from [`https://www.wireshark.org/download.html`](https://www.wireshark.org/download.html) or using `winget`:
+	
+		```
+		winget install WiresharkFoundation.Wireshark
+		```
+
+	- Install cURL from [`https://curl.se/windows/`](https://curl.se/windows/) or using `winget`:
+	
+		```
+		winget install cURL.cURL
+		```
+	
+	- Install Node.js from [`https://nodejs.org/en/download`](https://nodejs.org/en/download) or using `winget`:
+	
+		```
+		winget install OpenJS.NodeJS
+		```
+
+	- Install Ngrok from [`https://ngrok.com/download`](https://ngrok.com/download) and sign-up before attempting to start an access tunnel. Terminal client can also be downloaded via `winget`:
+	
+		```
+		winget install Ngrok.Ngrok
+		```
+	
+	- Install Python 3.11 from [`https://www.python.org/downloads/release/python-3112/`](https://www.python.org/downloads/release/python-3112/). Ensure "Add to environment variables" option is checked before proceeding. Using `winget` to simply the process:
+	
+		```
+		winget install -e --id Python.Python.3.11
+		```
 	
 # What are Sockets?
 ### 1. What is an IP Address and a Port?
@@ -19,13 +48,15 @@ Internet Protocol version 4 (IPv4) defines an IP address as a 32-bit number. How
 
 IP addresses are written and displayed in human-readable notations, such as `192.0.2.1` in IPv4, and `2001:db8:0:1234:0:567:8:1` in IPv6.
 
+![](https://cdn.discordapp.com/attachments/1091719595552931881/1092000676466413648/IP__PORT.jpg)
+
 The IP address space is managed globally by the Internet Assigned Numbers Authority (IANA), and by five regional Internet registries (RIRs) responsible in their designated territories for assignment to local Internet registries, such as Internet service providers (ISPs), and other end users. **Some IPv4 addresses are reserved for private networks and are not globally unique viz. those with format `192.168.***.***` (private NAT address) or `127.0.0.1` (localhost).**
 
 Network administrators assign an IP address to each device connected to a network. Such assignments may be on a static (fixed or permanent) or dynamic basis (changing after a restablished route), depending on network practices and software features.
 
 Reference: [Wikipedia - IP Address](https://en.wikipedia.org/wiki/IP_address)
 
-Read more: 
+Read more: [Wikipedia - List of TCP and UDP port numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
 ### 2. Combination of Transport Protocol (ususally either TCP or UDP), IP Address and a Port forms a Network Socket
 
