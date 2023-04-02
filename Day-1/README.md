@@ -50,6 +50,22 @@ IP addresses are written and displayed in human-readable notations, such as `192
 
 ![](https://cdn.discordapp.com/attachments/1091719595552931881/1092000676466413648/IP__PORT.jpg)
 
+Some notable commonly used unofficial and reserved ports:
+
+Port # | Usage
+-------|--------
+20 | File Transfer Protocol (FTP)
+22 | Secure Shell (SSH)
+23 | Telnet
+25 | Historically, Simple Mail Transfer Protocol (SMTP)
+53 | Domain Name System
+80 | HTTP Server (without TLS encryption)
+443 | HTTPS Server (with TLS encryption)
+587 | Modern encrypted SMTP 
+3000 | create|react|app developement mode deployment
+3389 | Remote Desktop Protocol (RDP)
+9001 | Tor Network
+
 The IP address space is managed globally by the Internet Assigned Numbers Authority (IANA), and by five regional Internet registries (RIRs) responsible in their designated territories for assignment to local Internet registries, such as Internet service providers (ISPs), and other end users. **Some IPv4 addresses are reserved for private networks and are not globally unique viz. those with format `192.168.***.***` (private NAT address) or `127.0.0.1` (localhost).**
 
 Network administrators assign an IP address to each device connected to a network. Such assignments may be on a static (fixed or permanent) or dynamic basis (changing after a restablished route), depending on network practices and software features.
