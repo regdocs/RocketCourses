@@ -62,7 +62,7 @@ Port # | Usage
 80 | HTTP Server (without TLS encryption)
 443 | HTTPS Server (with TLS encryption)
 587 | Modern encrypted SMTP 
-3000 | create|react|app developement mode deployment
+3000 | create-react-app dev deployment
 3389 | Remote Desktop Protocol (RDP)
 9001 | Tor Network
 
