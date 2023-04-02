@@ -33,7 +33,7 @@
 		winget install Ngrok.Ngrok
 		```
 	
-	- Install Python 3.11 from [`https://www.python.org/downloads/release/python-3112/`](https://www.python.org/downloads/release/python-3112/). Ensure "Add to environment variables" option is checked before proceeding. Using `winget` to simply the process:
+	- Install Python 3.11 from [`https://www.python.org/downloads/release/python-3112/`](https://www.python.org/downloads/release/python-3112/). Ensure "Add to environment variables" option is checked before proceeding. Use `winget` to simplify the process:
 	
 		```
 		winget install -e --id Python.Python.3.11
