@@ -1,2 +1,3 @@
-# Courses by [`jayzsh`](https://github.com/jayzsh)
-Courses on [`Python`](./python3-2023), [`Web`](./backend-2023)
+# 📝 Courses by [`jayzsh`](https://github.com/jayzsh)
+- [`Python 3`](./python3-2023)
+- [`Web & Networking 101`](./backend-2023)
