@@ -1,2 +1,2 @@
-# BN2UMP
-Courses on [Python](./python3-2023), [Back-end](./backend-2023)
+# Courses by [`jayzsh`](https://github.com/jayzsh)
+Courses on [`Python`](./python3-2023), [`Web`](./backend-2023)
