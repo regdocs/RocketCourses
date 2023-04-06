@@ -72,13 +72,13 @@
 
 	 ```py
 	 >>> # Program: sum.py
-	 >>> # A simple program to add 20 to a number
+	 >>> # A simple program to add 45 to a number
 	 >>> 
 	 >>> x = input("Enter a number: ")
 	 >>> x = int(x)
 	 >>> x = x + 45
 	 >>> 
-	 >>> print("45 added to the number is " + x)
+	 >>> print("45 added to the number is " + str(x))
 	 ```
 *(What are Python datatypes?)*
 
