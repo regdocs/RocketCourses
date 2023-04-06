@@ -51,7 +51,8 @@
 	 >>> # stored as a 'string' in a newly created 'variable' x
 	 >>> x = input("Enter your name: ")
 	 >>> 
-	 >>> # Prints "Woah, ", then the string stored in x, then 
+	 >>> # Prints "Woah, ", then the string stored in x, then
+	 >>> # " is a beautiful name!"
 	 >>> print("Woah, " + x + " is a beautiful name!")
 	 >>> 
 	 >>> # End of actual.py
