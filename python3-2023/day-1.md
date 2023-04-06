@@ -120,7 +120,7 @@
 		```python
 		>>> def printsum(x, y):
 		...     s = x + y
-		...     print("The sum of " + x + " and " + y + " is " + s)
+		...     print("The sum of " + str(x) + " and " + str(y) + " is " + str(s))
 		... 
 		>>> def getsum(x, y):
 		...     s = x + y
