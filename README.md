@@ -1,2 +1,2 @@
 # BN2UMP
-The Web 101
+Courses on [Python](./python3-2023), [Back-end](./backend-2023)
