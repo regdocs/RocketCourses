@@ -1,3 +1,3 @@
 # 📝 Courses by [`jayzsh`](https://github.com/jayzsh)
-- [`Python 3`](./python3-2023)
-- [`Web & Networking 101`](./backend-2023)
+- [`Python 3 (PN2UMP)`](./python3-2023)
+- [`Computer Networks & The Internet 101 (BN2UMP)`](./backend-2023)
