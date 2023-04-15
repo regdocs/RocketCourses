@@ -10,8 +10,8 @@ Here are the different types of tokens in Python:
 		 - `my_variable`
 		 - `number_of_items`
 		 - `hello_world`
-		 - `myFunction`
-	     - `MyClass`
+		 - `myFunction63`
+	     - `MySuper30Class`
 		 - `_private_variable`
 		 - `__private_variable`
 
@@ -21,8 +21,7 @@ Here are the different types of tokens in Python:
         - **Spaces:** You cannot use spaces in identifiers. Instead, you can use underscores ("_") to separate words.
         - **Starting with a digit:** Identifiers cannot start with a digit.
         - **Special characters:** Identifiers cannot contain special characters such as "$" or "@".
-        <br />
-	
+        
 		```py
 		if = 10     # "if" is a keyword
 		my-variable = 20     # "-" is not allowed in identifiers
@@ -60,8 +59,92 @@ Here are the different types of tokens in Python:
 		- Set literals: `{1, 2, 3}`, `set()`
 		- Dictionary literals: `{'a': 1, 'b': 2}`, `{}`
 	- Ellipsis literal: `...`
-	- Special string literals: b'hello', b""""hello\nworld""""
-Note that the syntax for numeric literals allows for different bases (hexadecimal and binary), as well as scientific notation for floating-point literals. String literals can be single-quoted, double-quoted, or triple-quoted, and can contain escape sequences to represent special characters. Container literals allow you to create lists, tuples, sets, and dictionaries with a sequence of elements enclosed in brackets or braces. The Ellipsis literal (...) is used in advanced slicing syntax, and the bytes literal (b'hello') is used to represent a sequence of bytes.
+	- Special string literals:
+		- ***Raw strings:*** Raw strings in Python are useful when working with strings that contain backslashes or escape characters like \n, \t, etc. By using raw strings, we can avoid having to escape these characters with another backslash, making our code more readable.
+
+			Some of the utilities of a raw string in Python include:
+
+			- **Regular expressions:** Raw strings are commonly used when working with [regular expressions](https://en.wikipedia.org/wiki/Regular_expression). Since regular expressions often contain backslashes, using raw strings avoids the need to escape these characters.
+			- **File paths:** When working with file paths, backslashes are commonly used to separate directories. By using raw strings, we can avoid having to escape these backslashes.
+			- **Windows paths:** Raw strings can be especially useful when working with Windows file paths, as these paths use backslashes as a directory separator.
+
+			Overall, raw strings can simplify string manipulation by allowing us to use special characters without having to escape them. Here's an example:
+			
+			```py
+			>>> print(r"Hello\nWorld")
+			Hello\nWorld
+			>>> print("Hello\nWorld")
+			Hello
+			World
+			```
+			
+		- ***Byte strings:*** A byte string is a sequence of bytes. Byte strings are represented by a `b` before the opening quote of the string. A byte string in Python has many utilities, some of which include:
+
+			- **Storing binary data:** Byte strings are commonly used to store binary data such as images, audio files, and network packets.
+
+			- **Network communication:** Byte strings are also used for sending and receiving data over the network.
+
+			- **Encryption and decryption:** Byte strings are often used in encryption and decryption algorithms, where the binary data is transformed into a byte string for processing.
+
+			- **Encoding and decoding:** Byte strings are used to encode and decode data from one character encoding to another, for example, from UTF-8 to UTF-16.
+
+			- **Bit manipulation:** Byte strings can be used for bitwise operations such as AND, OR, XOR, and NOT, which can be useful in *cryptography*, *compression*, and other applications.
+
+			- **File I/O:** Byte strings are used for reading and writing binary files, such as image or audio files.
+
+			- **Serialization:** Byte strings are often used in serialization and deserialization of Python objects, where the objects are transformed into a byte string for storage or transmission.
+
+			- **Hashing:** Byte strings are commonly used in hashing algorithms, such as SHA-1 or MD5, which generate a fixed-length byte string representation of a message or data.
+
+			Overall, byte strings are a versatile data type in Python, and their many utilities make them an essential part of many programming applications. Here are some code examples showing their utility which will be discussed in detail in later modules:
+
+			- Encoding a string into bytes:
+				```py
+				string = "Hello, world!"
+				byte_string = string.encode('utf-8')
+				print(byte_string)
+				```
+
+			- Decoding a byte string into a string:
+				```py
+				byte_string = b'Hello, world!'
+				string = byte_string.decode('utf-8')
+				print(string)
+				```
+
+			- Writing a byte string to a file:
+				```py
+				byte_string = b'Hello, world!'
+				with open('file.txt', 'wb') as file:
+					file.write(byte_string)
+				```
+
+			- Reading a byte string from a file and decoding it into a string:
+				```py
+				with open('file.txt', 'rb') as file:
+					byte_string = file.read()
+				string = byte_string.decode('utf-8')
+				print(string)
+				```
+		- ***F-strings:*** F-strings, also known as formatted string literals, are a way to embed expressions inside string literals, using a minimal syntax. They were introduced in Python 3.6 as a new way to format strings. Here's an example of an f-string:
+
+			```py
+			>>> name = "Alice"
+			>>> age = 28
+			>>> f"My name is {name} and I am {age} years old."
+			'My name is Alice and I am 28 years old.'
+			```
+
+			In this example, the curly braces `{}` denote a placeholder for a value to be substituted in the string. ⚠️ **The expressions inside the braces can be variables, function calls, or any other valid Python expressions, however special care must be observed while trying to reference `str()` type keys using offset-syntax `rootlevel['sublevel1']['sublevel2']` containing single or double quotations-- More on this in later READMEs.**
+
+			F-strings also support simple formatting, such as specifying the number of decimal places for floating-point values:
+
+			```py
+			>>> pi = 3.14159265
+			>>> f"Pi is approximately {pi:.2f}"
+			'Pi is approximately 3.14'
+			```
+			In this example, the `.2f` inside the braces specifies that the floating-point value should be formatted with two decimal places.
 
  5. **Operators:** These are symbols that perform arithmetic, logical, or comparison operations. Python operators are as follows:
 	- Arithmetic operators:
@@ -116,7 +199,7 @@ Note that the syntax for numeric literals allows for different bases (hexadecima
 
 Python uses a lexer to break down the program into individual tokens before it is compiled or interpreted. This allows the Python interpreter to understand the meaning of the code and execute it accordingly.
 
-## Spot the keywords:
+## An example of 'everything is token':
 ```py
 import math
 from collections import deque
@@ -180,5 +263,3 @@ z = x < y  # z is now True
 ```
 
 In this example, z is assigned the value of True because x is less than y.
-
-
