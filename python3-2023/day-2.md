@@ -22,6 +22,7 @@ Here are the different types of tokens in Python:
         - **Starting with a digit:** Identifiers cannot start with a digit.
         - **Special characters:** Identifiers cannot contain special characters such as "$" or "@".
         
+	
 		```py
 		if = 10     # "if" is a keyword
 		my-variable = 20     # "-" is not allowed in identifiers
