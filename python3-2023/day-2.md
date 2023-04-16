@@ -21,7 +21,7 @@ Here are the different types of tokens in Python:
         - **Spaces:** You cannot use spaces in identifiers. Instead, you can use underscores ("_") to separate words.
         - **Starting with a digit:** Identifiers cannot start with a digit.
         - **Special characters:** Identifiers cannot contain special characters such as "$" or "@".
-        
+        <br />
 	
 		```py
 		if = 10     # "if" is a keyword
