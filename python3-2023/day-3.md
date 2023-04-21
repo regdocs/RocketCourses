@@ -306,3 +306,25 @@ The bitwise right shift operation is commonly used in computer programming for t
 2. **Extracting or discarding bits:** The bitwise right shift operation can be used to extract specific bits from a binary number by shifting the desired bits to the rightmost position and then using a bitwise AND operation with a mask. It can also be used to discard the least significant bits of a number by shifting them off the right end.
 
 3. **Implementing bit fields:** Bit fields are often used in computer programming to store multiple values in a single variable, with each value occupying a specific number of bits. The bitwise right shift operation can be used to align and extract the individual bit fields.
+
+# 📝 Problems to try out (if you are a bitwise enthusiast)
+
+1. Bitwise AND: Write a program to check if a given number is even or odd using the bitwise AND operator.
+2. Bitwise OR: Write a program to swap two integers using the bitwise OR operator.
+3. Bitwise NOT: Write a program to invert the bits in a given integer using the bitwise NOT operator.
+4. Bitwise XOR: Write a program to find the missing number in an array of integers using the bitwise XOR operator.
+5. Bitwise left shift: Write a program to multiply a given number by 2^n using the bitwise left shift operator.
+6. Bitwise right shift: Write a program to divide a given number by 2^n using the bitwise right shift operator.
+7. Bit manipulation: Write a program to set, clear or toggle specific bits in a given integer using bitwise operators.
+8. Bitwise operations on strings: Write a program to perform bitwise operations on two binary strings of equal length, such as XOR or AND.
+9. Set or clear a bit at a specific position: Write a program to set or clear a bit at a specific position in a given number using bitwise OR and NOT operators.
+10. Bitwise operations on sets: Write a program to perform bitwise operations on sets represented as bit masks, such as intersection or union.
+11. Check if a number is a power of two: Write a program to check if a given number is a power of two using the bitwise AND operator.
+12. Swap two variables: Write a program to swap two variables without using a third variable, using the bitwise XOR operator.
+13. Get the absolute value of a number: Write a program to get the absolute value of a given number using the bitwise AND operator.
+14. Count the number of set bits in a number: Write a program to count the number of set bits (bits with a value of 1) in a given number using bitwise AND and right shift operators.
+15. Reverse the bits in a number: Write a program to reverse the bits in a given number using bitwise AND, left shift, and right shift operators.
+16. Check if two numbers have opposite signs: Write a program to check if two given numbers have opposite signs using bitwise XOR and right shift operators.
+17. Check if a given number is a palindrome: Write a program to check if a given number is a palindrome (reads the same forwards and backwards) using bitwise AND and left shift operators.
+18. Get the maximum of two numbers: Write a program to get the maximum of two given numbers using bitwise AND, OR, and XOR operators.
+19. Find all subsets of a given set using the concept of switches and combination of bits.
